@@ -1,317 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deem Consultancy</title>
-    <style>
-        h1 {
-            padding-top: 65px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deem Consultancy</title>
+        <style>
+            h1 {
+                padding-top: 65px;
+            }
+    
+            p {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: x-large;
+            }
+    
+            .filingprocess {
+                margin-bottom: 10px;
+            }
+    
+            #grid1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 43px;
+            }
+    
+            #grid1left{
+                display:grid;
+                grid-template-columns:1fr 2fr;
+                grid-template-rows:repeat(1,1fr 2fr);
+            }
+    
+            #filingprocessdiv {
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+    
+            #company {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+    
+            #IncomeTax {
+                display: flex;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+    
+            #GST {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+    
+            #Firm {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+    
+            #ProjectedReports {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+    
+            .box {
+                border: 1px solid black;
+                background-color: aqua;
+            }
+    
+            .purse {
+                width: 100px;
+                margin-left:40%;
+                margin-top:40%;
+            }
+    
+            .topnav {
+                /* overflow: hidden; */
+                background-color: orange;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 5px 20px;
+            }
+    
+            .topnav a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
 
-        p {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: x-large;
-        }
-
-        .filingprocess {
-            margin-bottom: 10px;
-        }
-
-        #grid1 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 43px;
-        }
-
-        #grid1left{
-            display:grid;
-            grid-template-columns:1fr 2fr;
-            grid-template-rows:repeat(1,1fr 2fr);
-        }
-
-        #filingprocessdiv {
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-
-        #company {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        #IncomeTax {
-            display: flex;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        #GST {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        #Firm {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        #ProjectedReports {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .box {
-            border: 1px solid black;
-            background-color: aqua;
-        }
-
-        .purse {
-            width: 100px;
-            margin-left:40%;
-            margin-top:40%;
-        }
-
-        .topnav {
-            /* overflow: hidden; */
-            background-color: orange;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 5px 20px;
-        }
-
-        .topnav a {
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            padding-right: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="grid1id" style="display:inline-block;"></div>
-    <div class="topnav">
-        <h3 style="display: inline-block;font-family: Arial, Helvetica, sans-serif;padding-right:20px;color:white;">Deem Consultancy</h3>
-        <a href="#grid1id">Home</a>
-        <a href="#companydiv">Company</a>
-        <a href="#IncomeTaxdiv">Income Tax</a>
-        <a href="#GSTdiv">GST</a>
-        <a href="#Firmdiv">Firm</a>
-        <a href="#ProjectedReportsdiv">Projected Reports</a>
-    </div>
-    <div id="grid1">
-        <div id="grid1left">
-            <div>
-                <img class="purse" src="images\logos\purse.webp" />
+    <body>
+        <div id="grid1id" style="display:inline-block;"></div>
+        <div class="topnav">
+            <h3 style="display: inline-block;font-family: Arial, Helvetica, sans-serif;padding-right:20px;color:white;">Deem Consultancy</h3>
+            <a href="#grid1id">Home</a>
+            <a href="#companydiv">Company</a>
+            <a href="#IncomeTaxdiv">Income Tax</a>
+            <a href="#GSTdiv">GST</a>
+            <a href="#Firmdiv">Firm</a>
+            <a href="#ProjectedReportsdiv">Projected Reports</a>
+        </div>
+        <div id="grid1">
+            <div id="grid1left">
+                <div>
+                    <img class="purse" src="images\logos\purse.webp" />
+                </div>
+                <div>
+                    <h2 style="font-size:28px;margin-right:50%;margin-top:25%;">Deem Consultancy</h2>
+                </div>
+                <div style="grid-column:1/3;">
+                    <p style="font-size:x-large;">
+                        We are experienced team of tax consultants,Chartered Accountants (CAs), and Company Secretaries
+                        (CSs). We
+                        specialize in MCA registration, filings, income tax, GST consulting, and HR services. With years of
+                        experience in accounting and taxation practices.
+                    </p>
+                </div>
             </div>
             <div>
-                <h2 style="font-size:28px;margin-right:50%;margin-top:25%;">Deem Consultancy</h2>
-            </div>
-            <div style="grid-column:1/3;">
-                <p style="font-size:x-large;">
-                    We are experienced team of tax consultants,Chartered Accountants (CAs), and Company Secretaries
-                    (CSs). We
-                    specialize in MCA registration, filings, income tax, GST consulting, and HR services. With years of
-                    experience in accounting and taxation practices.
-                </p>
+                <img src="images/towfiqu-barbhuiya-nApaSgkzaxg-unsplash.jpg" style="width:900px">
             </div>
         </div>
-        <div>
-            <img src="images/towfiqu-barbhuiya-nApaSgkzaxg-unsplash.jpg" style="width:900px">
-        </div>
-    </div>
-    <div id="filingprocessdiv">
-        <div id="companydiv"></div>
-        <h1>Company</h1>
-        <div class=filingprocess id="company">
-            <div>
-                <img style="width:260px" src="images/Company/Comapany Registration.jpeg" />
-                <p>Company Registration @ (T&C)</p>
-                <h3>&#x20b9;17499</h3>
+        <div id="filingprocessdiv">
+            <div id="companydiv"></div>
+            <h1>Company</h1>
+            <div class=filingprocess id="company">
+                <div>
+                    <img style="width:260px" src="images/Company/Comapany Registration.jpeg" />
+                    <p>Company Registration @ (T&C)</p>
+                    <h3>&#x20b9;17499</h3>
+                </div>
+                <div>
+                    <img style="width:260px" src="images/Company/ISO.jpeg" />
+                    <p>ISO Certification @ (T&C)</p>
+                    <h3>&#x20b9;3499</h3>
+                </div>
+                <div>
+                    <img style="width:260px" src="images/Company/ImportExport.jpeg" />
+                    <p>Exim Licence IEC Certificate @ ( T&C)</p>
+                    <h3>&#x20b9;6499</h3>
+                </div>
+                <div>
+                    <img style="width:260px" src="images/Company/pvt company Annual filing.jpeg" />
+                    <p>ITR Filing/ Salary @(T&C)</p>
+                    <h3>&#x20b9;12500</h3>
+                </div>
+                <div>
+                    <img style="width:260px" src="images/Company/digital signature.jpeg" />
+                    <p>Digital Signature Certificate for 2 Years</p>
+                    <h3>&#x20b9;2000</h3>
+                </div>
+                <div>
+                    <img style="width:260px" src="images/Company/startup india registration.jpeg" />
+                    <p>StartUp India Registration</p>
+                    <h3>&#x20b9;9999</h3>
+                </div>
             </div>
-            <div>
-                <img style="width:260px" src="images/Company/ISO.jpeg" />
-                <p>ISO Certification @ (T&C)</p>
-                <h3>&#x20b9;3499</h3>
+            <div id="IncomeTaxdiv"></div>
+            <h1>Income Tax</h1>
+            <div class=filingprocess id="IncomeTax">
+    
+                <div>
+                    <img style="width:350px" src="images/IncomeTax/itrforindividuals.jpg" />
+                    <p>ITR Filing/ Salary @(T&C)</p>
+                    <h3>&#x20b9;1499</h3>
+                </div>
+                <div>
+                    <img style="width:350px" src="images/IncomeTax/itrforbussiness.png" />
+                    <p>ITR Filing/ Business Individual @(T&C)</p>
+                    <h3>&#x20b9;3000</h3>
+                </div>
+                <div>
+                    <img style="height:195px;width:350px;" src="images/IncomeTax/itrcapitalgains.jpeg" />
+                    <p>ITR Filing/ Capital Gains Or Loss Individual @(T&C)</p>
+                    <h3>&#x20b9;4999</h3>
+                </div>
             </div>
-            <div>
-                <img style="width:260px" src="images/Company/ImportExport.jpeg" />
-                <p>Exim Licence IEC Certificate @ ( T&C)</p>
-                <h3>&#x20b9;6499</h3>
+            <div id="GSTdiv"></div>
+            <h1>GST</h1>
+            <div class=filingprocess id="GST">
+                <div>
+                    <img style="width:260px;" src="images/GST/gstregistration.jpeg" />
+                    <p>GST Registration @(T&C)</p>
+                    <h3>&#x20b9;5999</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/GST/gstcompositionscheme.jpeg" />
+                    <p>GST Composition Filing</p>
+                    <h3>&#x20b9;4999</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/GST/gstreturnfiling.jpeg" />
+                    <p>GST Monthly Filing Individuals</p>
+                    <h3>&#x20b9;1999</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/GST/gstcompanyfiling.jpeg" />
+                    <p>GST Company Monthly Filing</p>
+                    <h3>&#x20b9;4999</h3>
+                </div>
             </div>
-            <div>
-                <img style="width:260px" src="images/Company/pvt company Annual filing.jpeg" />
-                <p>ITR Filing/ Salary @(T&C)</p>
-                <h3>&#x20b9;12500</h3>
+            <div id="Firmdiv"></div>
+            <h1>Firm</h1>
+            <div class=filingprocess id="Firm">
+                <div>
+                    <img style="width:260px;" src="images/Firm/APTrade.jpeg" />
+                    <p>Partnership Registration AP</p>
+                    <h3>&#x20b9;10500</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/Firm/PTRegistration-AP.jpeg" />
+                    <p>Profession Tax Registration -AP</p>
+                    <h3>&#x20b9;7999</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/Firm/MSMERegistration.jpeg" />
+                    <p>MSME Certification Process</p>
+                    <h3>&#x20b9;2000</h3>
+                </div>
             </div>
-            <div>
-                <img style="width:260px" src="images/Company/digital signature.jpeg" />
-                <p>Digital Signature Certificate for 2 Years</p>
-                <h3>&#x20b9;2000</h3>
-            </div>
-            <div>
-                <img style="width:260px" src="images/Company/startup india registration.jpeg" />
-                <p>StartUp India Registration</p>
-                <h3>&#x20b9;9999</h3>
-            </div>
-        </div>
-        <div id="IncomeTaxdiv"></div>
-        <h1>Income Tax</h1>
-        <div class=filingprocess id="IncomeTax">
-
-            <div>
-                <img style="width:350px" src="images/IncomeTax/itrforindividuals.jpg" />
-                <p>ITR Filing/ Salary @(T&C)</p>
-                <h3>&#x20b9;1499</h3>
-            </div>
-            <div>
-                <img style="width:350px" src="images/IncomeTax/itrforbussiness.png" />
-                <p>ITR Filing/ Business Individual @(T&C)</p>
-                <h3>&#x20b9;3000</h3>
-            </div>
-            <div>
-                <img style="height:195px;width:350px;" src="images/IncomeTax/itrcapitalgains.jpeg" />
-                <p>ITR Filing/ Capital Gains Or Loss Individual @(T&C)</p>
-                <h3>&#x20b9;4999</h3>
-            </div>
-        </div>
-        <div id="GSTdiv"></div>
-        <h1>GST</h1>
-        <div class=filingprocess id="GST">
-            <div>
-                <img style="width:260px;" src="images/GST/gstregistration.jpeg" />
-                <p>GST Registration @(T&C)</p>
-                <h3>&#x20b9;5999</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/GST/gstcompositionscheme.jpeg" />
-                <p>GST Composition Filing</p>
-                <h3>&#x20b9;4999</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/GST/gstreturnfiling.jpeg" />
-                <p>GST Monthly Filing Individuals</p>
-                <h3>&#x20b9;1999</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/GST/gstcompanyfiling.jpeg" />
-                <p>GST Company Monthly Filing</p>
-                <h3>&#x20b9;4999</h3>
-            </div>
-        </div>
-        <div id="Firmdiv"></div>
-        <h1>Firm</h1>
-        <div class=filingprocess id="Firm">
-            <div>
-                <img style="width:260px;" src="images/Firm/APTrade.jpeg" />
-                <p>Partnership Registration AP</p>
-                <h3>&#x20b9;10500</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/Firm/PTRegistration-AP.jpeg" />
-                <p>Profession Tax Registration -AP</p>
-                <h3>&#x20b9;7999</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/Firm/MSMERegistration.jpeg" />
-                <p>MSME Certification Process</p>
-                <h3>&#x20b9;2000</h3>
-            </div>
-        </div>
-        <div id="ProjectedReportsdiv"></div>
-        <h1>Projected Reports</h1>
-        <div class=filingprocess id="ProjectedReports">
-            <div>
-                <img style="width:260px;" src="images/Projected Reports/3yearprojections.jpeg" />
-                <p>3 Years Projections</p>
-                <h3>&#x20b9;4999</h3>
-            </div>
-            <div>
-                <img style="width:260px;" src="images/Projected Reports/bankloanprojections.jpeg" />
-                <p>Bank Loan Projections</p>
-                <h3>&#x20b9;2999</h3>
+            <div id="ProjectedReportsdiv"></div>
+            <h1>Projected Reports</h1>
+            <div class=filingprocess id="ProjectedReports">
+                <div>
+                    <img style="width:260px;" src="images/Projected Reports/3yearprojections.jpeg" />
+                    <p>3 Years Projections</p>
+                    <h3>&#x20b9;4999</h3>
+                </div>
+                <div>
+                    <img style="width:260px;" src="images/Projected Reports/bankloanprojections.jpeg" />
+                    <p>Bank Loan Projections</p>
+                    <h3>&#x20b9;2999</h3>
+                </div>
             </div>
         </div>
-    </div>
-    <h1>About Us</h1>
-    <div id="AboutUs">
-        <p>
-            Looking for talented professionals to join our experienced team of tax consultants, Chartered Accountants
-            (CAs), and Company Secretaries (CSs). We specialize in MCA registration, filings, income tax, GST
-            consulting, and HR services. With years of experience in accounting and taxation practices, we've partnered
-            with top MNCs like ITC and Singapore-based companies. Currently, we're collaborating with companies and for
-            their Statutory obligations,backend Account's and audit processes. Join us as we embark on exciting new
-            projects. Apply now to be a part of our dynamic team!
-        </p>
-        <p>drop your mail at : ccs@deemconsultancyservices.com</p>
-        <h1>About our Management…......</h1>
-        <p>**Profile of Mr. Cheekatla Prasanna Kumar M.Com., MBA-Finance (Managing Director): A Dynamic Financial
-            Professional**</p>
-        <p>Mr. Cheekatla Prasanna Kumar is a seasoned financial professional whose journey from a bank trainee to a Tax
-            Consultant at Bevision Fintech Private Limited reflects his extensive expertise and versatility in the
-            financial sector. With a rich background in various roles, Mr. Kumar has honed his skills in financial
-            management, taxation, and strategic consulting over the course of his illustrious career.</p>
-        <h2>**Professional Journey:**</h2>
-        <ol style="font-family:Arial, Helvetica, sans-serif; font-size: x-large>
-            <li>
-                <strong>Bank Trainee: </strong>Mr. Kumar commenced his career in the financial domain as a bank trainee,
-                where he acquired a foundational understanding of banking operations, customer service, and financial
-                transactions. This early experience laid the groundwork for his future roles in the finance and
-                accounting field.
-            </li>
-            <li>
-                <strong>Union Bank Apprenticeship: </strong>During the early stages of his career, Mr. Kumar engaged in
-                an apprenticeship at Union Bank, gaining valuable insights into the intricacies of banking and financial
-                services. This formative experience contributed to his holistic understanding of the financial sector.
-            </li>
-            <li>
-                <strong>Accounts Assistant at Prathusha Shipping: </strong>
-                In the maritime industry, Mr. Kumar served as an Accounts Assistant at Prathusha Shipping. Here, he
-                contributed to financial management processes, showcasing his proficiency in handling accounts within
-                the unique context of the shipping sector.
-            </li>
-            <li>
-                <strong>Clerk at ITC ILTD: </strong>
-                His role as a Clerk at ITC ILTD further diversified Mr. Kumar's experience, providing exposure to the
-                complexities of financial administration in a diverse corporate environment.
-            </li>
-            <li>
-                <strong>Tax Executive at SS Oil Fields: s</strong>
-                Transitioning into the oil and gas sector, Mr. Kumar served as a Tax Executive at SS Oil Fields. In this
-                capacity, he specialized in tax-related matters, demonstrating his adaptability to industry-specific
-                challenges and regulations.
-            </li>
-            <li>
-                <strong>Senior Accounts Executive at Botha Shipping: </strong>
-                Mr. Kumar assumed the role of a Senior Accounts Executive at Botha Shipping, where he took on greater
-                responsibilities in financial management and played a pivotal role in overseeing accounting functions.
-            </li>
-            <li>
-                <strong>Accounts In Charge at KPR Group: </strong>
-                His career continued to ascend as he became the Accounts In Charge at KPR Group, showcasing his
-                leadership skills and ability to manage financial operations for a larger organizational context.
-            </li>
-            <li>
-                <strong>Senior Accounts Officer at Meawah Group: </strong>
-                As a Senior Accounts Officer at Meawah Group, Mr. Kumar's role involved overseeing comprehensive
-                financial functions, contributing to the strategic financial decision-making process of the
-                organization.
-            </li>
-            <li>
-                <strong>Tax Consultant at Bevision Fintech Private Limited:</strong>
-                Currently, Mr. Cheekatla Prasanna Kumar holds the position of Tax Consultant at Bevision Fintech Private
-                Limited. In this role, he leverages his extensive background to provide strategic tax-related insights,
-                contributing to the growth and compliance of the organization.
-            </li>
-        </ol>
-    </div>
-</body>
-
+        <h1>About Us</h1>
+        <div id="AboutUs">
+            <p>
+                Looking for talented professionals to join our experienced team of tax consultants, Chartered Accountants
+                (CAs), and Company Secretaries (CSs). We specialize in MCA registration, filings, income tax, GST
+                consulting, and HR services. With years of experience in accounting and taxation practices, we've partnered
+                with top MNCs like ITC and Singapore-based companies. Currently, we're collaborating with companies and for
+                their Statutory obligations,backend Account's and audit processes. Join us as we embark on exciting new
+                projects. Apply now to be a part of our dynamic team!
+            </p>
+            <p>drop your mail at : ccs@deemconsultancyservices.com</p>
+            <h1>About our Management…......</h1>
+            <p>**Profile of Mr. Cheekatla Prasanna Kumar M.Com., MBA-Finance (Managing Director): A Dynamic Financial
+                Professional**</p>
+            <p>Mr. Cheekatla Prasanna Kumar is a seasoned financial professional whose journey from a bank trainee to a Tax
+                Consultant at Bevision Fintech Private Limited reflects his extensive expertise and versatility in the
+                financial sector. With a rich background in various roles, Mr. Kumar has honed his skills in financial
+                management, taxation, and strategic consulting over the course of his illustrious career.</p>
+            <h2>**Professional Journey:**</h2>
+            <ol style="font-family:Arial, Helvetica, sans-serif; font-size: x-large>
+                <li>
+                    <strong>Bank Trainee: </strong>Mr. Kumar commenced his career in the financial domain as a bank trainee,
+                    where he acquired a foundational understanding of banking operations, customer service, and financial
+                    transactions. This early experience laid the groundwork for his future roles in the finance and
+                    accounting field.
+                </li>
+                <li>
+                    <strong>Union Bank Apprenticeship: </strong>During the early stages of his career, Mr. Kumar engaged in
+                    an apprenticeship at Union Bank, gaining valuable insights into the intricacies of banking and financial
+                    services. This formative experience contributed to his holistic understanding of the financial sector.
+                </li>
+                <li>
+                    <strong>Accounts Assistant at Prathusha Shipping: </strong>
+                    In the maritime industry, Mr. Kumar served as an Accounts Assistant at Prathusha Shipping. Here, he
+                    contributed to financial management processes, showcasing his proficiency in handling accounts within
+                    the unique context of the shipping sector.
+                </li>
+                <li>
+                    <strong>Clerk at ITC ILTD: </strong>
+                    His role as a Clerk at ITC ILTD further diversified Mr. Kumar's experience, providing exposure to the
+                    complexities of financial administration in a diverse corporate environment.
+                </li>
+                <li>
+                    <strong>Tax Executive at SS Oil Fields: s</strong>
+                    Transitioning into the oil and gas sector, Mr. Kumar served as a Tax Executive at SS Oil Fields. In this
+                    capacity, he specialized in tax-related matters, demonstrating his adaptability to industry-specific
+                    challenges and regulations.
+                </li>
+                <li>
+                    <strong>Senior Accounts Executive at Botha Shipping: </strong>
+                    Mr. Kumar assumed the role of a Senior Accounts Executive at Botha Shipping, where he took on greater
+                    responsibilities in financial management and played a pivotal role in overseeing accounting functions.
+                </li>
+                <li>
+                    <strong>Accounts In Charge at KPR Group: </strong>
+                    His career continued to ascend as he became the Accounts In Charge at KPR Group, showcasing his
+                    leadership skills and ability to manage financial operations for a larger organizational context.
+                </li>
+                <li>
+                    <strong>Senior Accounts Officer at Meawah Group: </strong>
+                    As a Senior Accounts Officer at Meawah Group, Mr. Kumar's role involved overseeing comprehensive
+                    financial functions, contributing to the strategic financial decision-making process of the
+                    organization.
+                </li>
+                <li>
+                    <strong>Tax Consultant at Bevision Fintech Private Limited:</strong>
+                    Currently, Mr. Cheekatla Prasanna Kumar holds the position of Tax Consultant at Bevision Fintech Private
+                    Limited. In this role, he leverages his extensive background to provide strategic tax-related insights,
+                    contributing to the growth and compliance of the organization.
+                </li>
+            </ol>
+        </div>
+    </body>
 </html>
