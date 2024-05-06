@@ -56,7 +56,7 @@
 
             <p class="lead mb-4">At the core of our approach is a dedication to excellence, integrity, and client satisfaction. We partner with businesses to navigate the complexities of financial regulations, offering expert guidance and support every step of the way. With our team by your side, you can trust that your financial affairs are in capable hands, allowing you to focus on what you do best – growing and managing your business effectively.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Contact Us</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3"onclick="goToContactUs()">Contact Us</button>
             </div>
         </div>
     </div>
@@ -337,7 +337,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
+         function goToContactUs() { 
+            window.location.href =  
+                "./contact-us.html"; 
+        } 
     </script>
+    
 </body>
 
 </html>
