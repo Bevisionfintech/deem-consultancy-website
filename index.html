@@ -1,415 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Deem Consultancy</title>
-        <style>
-            h1 {
-                padding-top: 65px;
-            }
-    
-            p {
-                font-family: 'Times New Roman', Times, serif;
-                font-size: x-large;
-            }
-    
-            .filingprocess {
-                margin-bottom: 10px;
-            }
-    
-            #grid1 {
-                display: grid;
-                grid-template-columns: 0.5fr 1fr 3fr;
-                margin-top: 43px;
-            }
-    
-            #filingprocessdiv {
-                margin-left: 200px;
-                margin-right: 200px;
-            }
-    
-            #company {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 25px;
-            }
-            #company1:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #company2:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #company3:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #company4:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #company5:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #company6:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-    
-            #IncomeTax {
-                display: flex;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 25px;
-            }
-            #IncomeTax1:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #IncomeTax2:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #IncomeTax3:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-    
-            #GST {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            #gst1:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #gst2:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #gst3:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #gst4:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deem Consultancy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
 
-    
-            #Firm {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 25px;
-            }
-            #firm1:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #firm2:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #firm3:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-    
-            #ProjectedReports {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 25px;
-            }
-            #projectedreports1:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-            #projectedreports2:hover{
-                box-shadow:15px 15px 15px orange;
-                cursor:pointer;
-            }
-    
-            .box {
-                border: 1px solid black;
-                background-color: aqua;
-            }
-    
-            .purse {
-                max-width: 100px;
-            }
-    
-            .topnav {
-                /* overflow: hidden; */
-                background-color: white;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding: 5px 20px;
-            }
-    
-            .topnav a {
-                color: orange;
-                text-align: center;
-                text-decoration: none;
-                padding-right: 20px;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div id="grid1id" style="display:inline-block;"></div>
-        <div class="topnav">
-            <h3 style="display: inline-block;font-family: Arial, Helvetica, sans-serif;padding-right:20px;color:white;">Deem Consultancy</h3>
-            <a href="#grid1id">Home</a>
-            <a href="#companydiv">Company</a>
-            <a href="#IncomeTaxdiv">Income Tax</a>
-            <a href="#GSTdiv">GST</a>
-            <a href="#Firmdiv">Firm</a>
-            <a href="#ProjectedReportsdiv">Projected Reports</a>
-        </div>
-        <div id="grid1">
-            <div id="grid1-purse" class="purse-heading" ><img class="purse" src="images\logos\purse.webp" /></div>
-            <div id="grid1-heading" class="purse-heading"> <h2 style="font-family:sans-serif;font-size:28px;">Deem Consultancy</h2></div>
-            <div id="grid1-image"  style="grid-row:1/3;grid-column:3/4;">
-                <img src="images/towfiqu-barbhuiya-nApaSgkzaxg-unsplash.jpg" style="width:1000px">
-            </div>
-            <div id="grid1-paragraph"  style="grid-column:1/3;">
-                <p style="font-size:x-large;">
-                    We are experienced team of tax consultants,Chartered Accountants (CAs), and Company Secretaries
-                    (CSs). We specialize in MCA registration, filings, income tax, GST consulting, and HR services. With years of
-                    experience in accounting and taxation practices.
-                </p>
-            </div>
-        </div>
-        <div id="filingprocessdiv">
-            <div id="companydiv"></div>
-            <h1>Company</h1>
-            <div class=filingprocess id="company">
-                <div>
-                    <img id="company1" style="width:260px" src="images/Company/Comapany Registration.jpeg" />
-                    <p>Company Registration @ (T&C)</p>
-                    <h3>&#x20b9;17499</h3>
-                </div>
-                <div>
-                    <img id="company2" style="width:260px" src="images/Company/ISO.jpeg" />
-                    <p>ISO Certification @ (T&C)</p>
-                    <h3>&#x20b9;3499</h3>
-                </div>
-                <div>
-                    <img id="company3" style="width:260px" src="images/Company/ImportExport.jpeg" />
-                    <p>Exim Licence IEC Certificate @ ( T&C)</p>
-                    <h3>&#x20b9;6499</h3>
-                </div>
-                <div>
-                    <img id="company4" style="width:260px" src="images/Company/pvt company Annual filing.jpeg" />
-                    <p>ITR Filing/ Companies @(T&C)</p>
-                    <h3>&#x20b9;4500</h3>
-                </div>
-                <div>
-                    <img id="company5" style="width:260px" src="images/Company/digital signature.jpeg" />
-                    <p>Digital Signature Certificate for 2 Years</p>
-                    <h3>&#x20b9;2000</h3>
-                </div>
-                <div>
-                    <img id="company6" style="width:260px" src="images/Company/startup india registration.jpeg" />
-                    <p>StartUp India Registration</p>
-                    <h3>&#x20b9;9999</h3>
-                </div>
-            </div>
-            <div id="IncomeTaxdiv"></div>
-            <h1>Income Tax</h1>
-            <div class=filingprocess id="IncomeTax">
-    
-                <div>
-                    <img id="IncomeTax1" style="width:350px" src="images/IncomeTax/itrforindividuals.jpg" />
-                    <p>ITR Filing/ Salary @(T&C)</p>
-                    <h3>&#x20b9;1499</h3>
-                </div>
-                <div>
-                    <img id="IncomeTax2" style="width:350px" src="images/IncomeTax/itrforbussiness.png" />
-                    <p>ITR Filing/ Business Individual @(T&C)</p>
-                    <h3>&#x20b9;3000</h3>
-                </div>
-                <div>
-                    <img id="IncomeTax3" style="height:195px;width:350px;" src="images/IncomeTax/itrcapitalgains.jpeg" />
-                    <p>ITR Filing/ Capital Gains Or Loss Individual @(T&C)</p>
-                    <h3>&#x20b9;4999</h3>
-                </div>
-            </div>
-            <div id="GSTdiv"></div>
-            <h1>GST</h1>
-            <div class=filingprocess id="GST">
-                <div>
-                    <img id="gst1" style="width:260px;" src="images/GST/gstregistration.jpeg" />
-                    <p>GST Registration @(T&C)</p>
-                    <h3>&#x20b9;5999</h3>
-                </div>
-                <div>
-                    <img id="gst2" style="width:260px;" src="images/GST/gstcompositionscheme.jpeg" />
-                    <p>GST Composition Filing</p>
-                    <h3>&#x20b9;4999</h3>
-                </div>
-                <div>
-                    <img id="gst3" style="width:260px;" src="images/GST/gstreturnfiling.jpeg" />
-                    <p>GST Monthly Filing Individuals</p>
-                    <h3>&#x20b9;1999</h3>
-                </div>
-                <div>
-                    <img id="gst4" style="width:260px;" src="images/GST/gstcompanyfiling.jpeg" />
-                    <p>GST Company Monthly Filing</p>
-                    <h3>&#x20b9;4999</h3>
-                </div>
-            </div>
-            <div id="Firmdiv"></div>
-            <h1>Firm</h1>
-            <div class=filingprocess id="Firm">
-                <div>
-                    <img id="firm1" style="width:260px;" src="images/Firm/APTrade.jpeg" />
-                    <p>Partnership Registration AP</p>
-                    <h3>&#x20b9;10500</h3>
-                </div>
-                <div>
-                    <img id="firm2" style="width:260px;" src="images/Firm/PTRegistration-AP.jpeg" />
-                    <p>Profession Tax Registration -AP</p>
-                    <h3>&#x20b9;7999</h3>
-                </div>
-                <div>
-                    <img id="firm3" style="width:260px;" src="images/Firm/MSMERegistration.jpeg" />
-                    <p>MSME Certification Process</p>
-                    <h3>&#x20b9;2000</h3>
-                </div>
-            </div>
-            <div id="ProjectedReportsdiv"></div>
-            <h1>Projected Reports</h1>
-            <div class=filingprocess id="ProjectedReports">
-                <div>
-                    <img id="projectedreports1" style="width:260px;" src="images/Projected Reports/3yearprojections.jpeg" />
-                    <p>3 Years Projections</p>
-                    <h3>&#x20b9;4999</h3>
-                </div>
-                <div>
-                    <img id="projectedreports2" style="width:260px;" src="images/Projected Reports/bankloanprojections.jpeg" />
-                    <p>Bank Loan Projections</p>
-                    <h3>&#x20b9;2999</h3>
-                </div>
-            </div>
-        </div>
-        <h1>About Us</h1>
-        <div id="AboutUs">
-            <p>
-                Looking for talented professionals to join our experienced team of tax consultants, Chartered Accountants
-                (CAs), and Company Secretaries (CSs). We specialize in MCA registration, filings, income tax, GST
-                consulting, and HR services. With years of experience in accounting and taxation practices, we've partnered
-                with top MNCs like ITC and Singapore-based companies. Currently, we're collaborating with companies and for
-                their Statutory obligations,backend Account's and audit processes. Join us as we embark on exciting new
-                projects. Apply now to be a part of our dynamic team!
-            </p>
-            <p>drop your mail at : ccs@deemconsultancyservices.com</p>
-            <h1>About our Management…......</h1>
-            <p>
-                Profile of Mr. Cheekatla Prasanna Kumar M.Com., MBA-Finance (Managing Director): A Dynamic Financial
-                Professional
-            </p>
-            <p>
-                Mr. Cheekatla Prasanna Kumar is a seasoned financial professional whose journey from a bank trainee to a Tax
-                Consultant at Bevision Fintech Private Limited reflects his extensive expertise and versatility in the
-                financial sector. With a rich background in various roles, Mr. Kumar has honed his skills in financial
-                management, taxation, and strategic consulting over the course of his illustrious career.
-            </p>
-            <h2 color:lightgray><strong>Professional Journey:</strong></h2>
-            <ul style="font-family:Arial, Helvetica, sans-serif; font-size: larger; color:lightgray;">
-                <li>
-                    <strong>Bank Trainee: </strong>Mr. Kumar commenced his career in the financial domain as a bank trainee,
-                    where he acquired a foundational understanding of banking operations, customer service, and financial
-                    transactions. This early experience laid the groundwork for his future roles in the finance and
-                    accounting field.
+<body>
+    <div id="grid1id" style="display:block;"></div>
+    <br/>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed;top:0;z-index: 100; width:100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Deem Consultancy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#grid1id">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Filing Process
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#companydiv">Company</a></li>
+                        <li><a class="dropdown-item" href="#incometaxdiv">Income Tax</a></li>
+                        <li><a class="dropdown-item" href="#gstdiv">GST</a></li>
+                        <li><a class="dropdown-item" href="#firmdiv">Firm</a></li>
+                        <li><a class="dropdown-item" href="#projectedreportsdiv">Projected Reports</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <strong>Union Bank Apprenticeship: </strong>During the early stages of his career, Mr. Kumar engaged in
-                    an apprenticeship at Union Bank, gaining valuable insights into the intricacies of banking and financial
-                    services. This formative experience contributed to his holistic understanding of the financial sector.
-                </li>
-                <li>
-                    <strong>Accounts Assistant at Prathusha Shipping: </strong>
-                    In the maritime industry, Mr. Kumar served as an Accounts Assistant at Prathusha Shipping. Here, he
-                    contributed to financial management processes, showcasing his proficiency in handling accounts within
-                    the unique context of the shipping sector.
-                </li>
-                <li>
-                    <strong>Clerk at ITC ILTD: </strong>
-                    His role as a Clerk at ITC ILTD further diversified Mr. Kumar's experience, providing exposure to the
-                    complexities of financial administration in a diverse corporate environment.
-                </li>
-                <li>
-                    <strong>Tax Executive at SS Oil Fields: s</strong>
-                    Transitioning into the oil and gas sector, Mr. Kumar served as a Tax Executive at SS Oil Fields. In this
-                    capacity, he specialized in tax-related matters, demonstrating his adaptability to industry-specific
-                    challenges and regulations.
-                </li>
-                <li>
-                    <strong>Senior Accounts Executive at Botha Shipping: </strong>
-                    Mr. Kumar assumed the role of a Senior Accounts Executive at Botha Shipping, where he took on greater
-                    responsibilities in financial management and played a pivotal role in overseeing accounting functions.
-                </li>
-                <li>
-                    <strong>Accounts In Charge at KPR Group: </strong>
-                    His career continued to ascend as he became the Accounts In Charge at KPR Group, showcasing his
-                    leadership skills and ability to manage financial operations for a larger organizational context.
-                </li>
-                <li>
-                    <strong>Senior Accounts Officer at Meawah Group: </strong>
-                    As a Senior Accounts Officer at Meawah Group, Mr. Kumar's role involved overseeing comprehensive
-                    financial functions, contributing to the strategic financial decision-making process of the
-                    organization.
-                </li>
-                <li>
-                    <strong>Tax Consultant at Bevision Fintech Private Limited:</strong>
-                    Currently, Mr. Cheekatla Prasanna Kumar holds the position of Tax Consultant at Bevision Fintech Private
-                    Limited. In this role, he leverages his extensive background to provide strategic tax-related insights,
-                    contributing to the growth and compliance of the organization.
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
                 </li>
             </ul>
-               <div style="margin-left:200px;margin-right:200px;">
-                    <p>
-                        Bevision Fintech Private Limited - Deem Consultancy services were started in the year of 2008 in
-                        Kakinada
-                        District, Andhra Pradesh, India.
-                    </p>
-        
-                    <p>
-                        We, serve many industries likes Software,Banking, Shipping, Export and Imports, Startups,Hotels,
-                        Manufacturing Industries , FMCG and others service sectors.
-                    </p>
-        
-                    <p>
-                        We are top consulting for educating Tax procedures and laws, for many industrial Training programs to
-                        their
-                        employees.
-                    </p>
-                    <p>
-                        Our Team Members are Top Tax Consultants, Chartered Accountant & Company Secretaries.
-                    </p>
-                    <p>
-                        We bring analytics to life, drive better decisions throughout our Leading Consulting Team, for Taxation
-                        &
-                        Taxes, Human resources, Business Consultant, Other Services, matters etc.,
-                    </p>
-                    <p>
-                        for more details please write us.
-                    </p>
-                    <p>
-                        ccs@deemconsultancyservices.com
-                    </p>
-                     <p> Contact: </p>
-                     <p> ✓ 9705809117 - Human Resource.</p>
-                     <p> ✓ 9573189117 - Software Solutions.</p>
-                     <p> ✓ 7396475223 -Fin tech Solutions.</p>
-                     <p> ✓ 9032229117- Startups and Accounts.</p>
+            <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+        </div>
+    </nav>
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/logos/purse.webp" alt="" width="72" height="69">
+        <h1 class="display-5 fw-bold text-body-emphasis">Tax Consultancy</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">  We are experienced team of tax consultants,Chartered Accountants (CAs), and Company Secretaries
+                (CSs). We specialize in MCA registration, filings, income tax, GST consulting, and HR services. With years of
+                experience in accounting and taxation practices.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Contact Us</button>
             </div>
         </div>
-    </body>
+    </div>
+
+    <!-- filing product seciton -->
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <h1>Company</h1><br />
+            <!-- company section -->
+            <div id=companydiv class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/Comapany Registration.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/ISO.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/ImportExport.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/pvt company Annual filing.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/digital signature.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/company/startup india registration.jpeg" height="260px">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- income tax section -->
+            <br/><br/><br/>
+            <h1>Income Tax</h1><br />
+            <div id="incometaxdiv"class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/income tax/itrcapitalgains.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/income tax/itrforbussiness.png" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/income tax/itrforindividuals.jpg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gst section -->
+            <br/><br/><br/>
+            <h1>GST</h1><br />
+            <div id="gstdiv" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/GST/gstcompanyfiling.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="images/GST/gstcompositionscheme.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/GST/gstregistration.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/GST/gstreturnfiling.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- firm section -->
+            <br/><br/><br/>
+            <h1>Firm</h1><br />
+            <div id="firmdiv" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Firm/APTrade.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="images/Firm/MSMERegistration.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Firm/PTRegistration-AP.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- projected reports section -->
+            <br/><br/><br/>
+            <h1>Projected Reports</h1><br />
+            <div id="projectedreportsdiv" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/projected reports/3yearprojections.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        <img src="images/projected reports/bankloanprojections.jpeg" height="260px" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="images/logos/purse.webp" class="bi me-2" width="40" height="40"/>
+            </a>
+            <p class="text-body-secondary">© Designed and Powered by Deem Consultancy</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Filing process</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              <li class="nav-item mb-2"><a href="#companydiv" class="nav-link p-0 text-body-secondary">Company</a></li>
+              <li class="nav-item mb-2"><a href="#incometaxdiv" class="nav-link p-0 text-body-secondary">Income Tax</a></li>
+              <li class="nav-item mb-2"><a href="#gstdiv" class="nav-link p-0 text-body-secondary">GST</a></li>
+              <li class="nav-item mb-2"><a href="#firmdiv" class="nav-link p-0 text-body-secondary">Firm</a></li>
+              <li class="nav-item mb-2"><a href="#projectedreportsdiv" class="nav-link p-0 text-body-secondary">Projected Reports</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Important links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms & Conditions</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Visit Our office</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">1-278/2, Raju Towers, Ground floor, Teacher's Colony, Rayudypalem, Kakinada, Andhra Pradesh, India., Kakinada , Andhra Pradesh, 533005</li>
+              <li class="nav-item mb-2">mail: ccs@deemconsultancyservices.com</li>
+              <li class="nav-item mb-2">phone: 9032229117</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
